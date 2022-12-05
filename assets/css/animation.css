@@ -1,0 +1,79 @@
+.animated{
+    visibility: hidden;
+}
+
+.toUp{
+    visibility: hidden;
+}
+
+/* text sliding up animation */
+.slideUp {
+    visibility: visible;
+    animation-name: slideUp;
+    animation-duration: 1s;
+}
+
+/* this is for chrome */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+/* this is for safari */
+@-webkit-keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+
+
+.toShow{
+    visibility: hidden;
+}
+
+/* text sliding up animation */
+.show {
+    visibility: visible;
+    animation-name: show;
+    animation-duration: 2s;
+}
+
+/* this is for chrome */
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.0);
+    }
+}
+
+/* this is for safari */
+@-webkit-keyframes show {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.0);
+    }
+}

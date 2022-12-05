@@ -1,0 +1,160 @@
+<html>
+
+<head>
+  <title>Home page</title>
+    
+      <!--Bootstrap-->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+      <link id="style-switch" rel="stylesheet" type="text/css" href="assets/css/bootstrap_style.css">
+       
+      <!-- Meta Tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <!-- Favicon -->
+	    <link rel="shortcut icon" href="assets/images/icon.png">
+
+	    <!-- Google Font -->
+	    <link rel="preconnect" href="https://fonts.gstatic.com">
+	    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+      <!-- CSS -->
+	    <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+	    <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+        
+      <link rel="stylesheet" type="text/css" href="assets/css/layout_home.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/animation.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/snap.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/font.css">
+  	    
+    
+</head>
+
+<body>
+
+  <header class="navbar-light navbar-sticky header-static" style="margin-bottom: 20px;">
+    <!-- Logo Nav START -->
+    <nav class="navbar navbar-expand-lg" id="hd-menu">
+        <div class="container">
+            <!-- Logo START -->
+            <a class="navbar-brand" href="home.html">
+                <img src="assets/images/logo.png"  alt="logo">			
+            </a>
+            <!-- Logo END -->
+
+            <!-- Responsive navbar toggler -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="text-body h6 d-none d-sm-inline-block">Menu</span>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Main navbar START -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav navbar-nav-scroll ms-auto">
+
+            <!-- Nav item 1 About-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="home.html" id="homeMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+              <ul class="dropdown-menu" aria-labelledby="homeMenu">
+                <li> <a class="dropdown-item" href="introduction.html">Introduction</a></li>
+                <li> <a class="dropdown-item" href="yasunigroups.html">Indigenous groups</a></li>
+                <li> <a class="dropdown-item" href="exotic_species.html">Exotic species</a></li>
+                <li> <a class="dropdown-item" href="main_threat.html">Main threats</a></li>
+              </ul>
+            </li>
+
+            <!-- Nav item 2 Donation -->
+            <li class="nav-item"> <a class="nav-link" href="donation.html">Donation</a></li>
+
+            <!-- Nav item 3 Prayer -->
+            <li class="nav-item"> <a class="nav-link" href="prayer.html">Prayer</a></li>
+
+            <!-- Nav item 4 Our team -->
+            <li class="nav-item" > <a class="nav-link" href="ourTeam.html">Our team</a></li>
+        </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <section>
+      <div class="banner">
+        <h1 class="slideUp" style="font-family: 'EB Garamond', serif;">Yasuní National Park<br/><span
+            style="font-size: 40%;">&nbsp; between oil exploitation and conservation</span></h1>
+        <!-- <p class="slideUp" style="font-family: 'EB Garamond', serif; text-align: left; font-size: 50%;"></p> -->
+      </div>
+    </section>
+
+    <section id="first_section">
+      <img src="assets/images/frog.jpeg" alt="frog">
+      <h1 class="toUp" style="font-family: 'EB Garamond', serif;">Yasuní National Park,<br>One of the Most
+        Biodiverse Places on Earth</h1>
+    </section>
+    <section id="second_section">
+      <img src="assets/images/Hunter.jpg" alt="hunter">
+      <h1 class="toUp" style="font-family: 'EB Garamond', serif;">However, illegal hunting and logging threaten Yasuní</h1>
+    </section>
+    <section id="third_section">
+      <img src="assets/images/oil_company.webp" alt="oil company">
+      <h1 class="toUp" style="font-family: 'EB Garamond', serif;">Also, the discovery of oil in 1937 underneath the fertile soil of the rainforest created a new threat.</h1>
+    </section>
+
+    <section id="third_section">
+      <img src="assets/images/monkey.jpeg" alt="oil company">
+      <h1 class="toShow" style="font-family: 'EB Garamond', serif; font-size: 600%;">Yasuní needs your help</h1>
+    </section>
+    <section id="last_section">
+
+    </section>
+
+    <a href="home.html"><img id="topIcon" src="assets/images/topicon_white.png"></a>
+
+  </main>
+  <footer>
+    <span>2022 App Programming</span>
+  </footer>
+
+  
+      <script>
+        // This code is related when the animation would be occured.
+        const options = {
+          root: null, // viewport
+          rootMargin: "0px",
+          threshold: 1.0,
+          // How much the element shows on the screen. 
+          // In this case 100%. You can change this value.
+        }
+    
+        const upwardObserver = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('slideUp');
+            }
+          });
+        }, options);
+    
+        // Adhere "slideUp" class to the all elements which haved class named "slideUp".
+        const slideUpList = document.querySelectorAll('.toUp');
+    
+        slideUpList.forEach(el => upwardObserver.observe(el));
+    
+    
+        const showObserver = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+            }
+          });
+        }, options);
+    
+        // Adhere "slideUp" class to the all elements which haved class named "slideUp".
+        const showList = document.querySelectorAll('.toShow');
+    
+        showList.forEach(el => showObserver.observe(el));
+      </script>
+  
+  
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+/* With this file, the web page works like slide show */
+/* 
+You need to be careful with the structre of your html elements.
+This function is sentive to the struecture.
+*/
+html {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section {
+    scroll-snap-align: start;
+}
+
+footer{
+    scroll-snap-align: start;
+}

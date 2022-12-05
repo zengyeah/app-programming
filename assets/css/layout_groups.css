@@ -1,0 +1,151 @@
+/* 
+It is related to the action which occurs when you click upward arrow 
+If you don't use this property, it teleport to the top without smooth animation.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap');
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+main{
+	font-family: 'EB Garamond', serif;
+}
+#hd-menu {
+    /* it makes menu always located above all contents */
+    z-index: 2;
+
+    /* position option makes header always located at the top position */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 75px;
+    padding: 20px;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    /* You MUST use this property if you want to align elements easily. */
+    display:flex;
+    /* main axis alignment */
+    justify-content: space-between;
+    /* cross axis alignment */
+    align-items: center;
+}
+
+header:hover #hd-menu{
+    background-color: white;   
+}
+
+header:hover #hd-menu a{
+    color: black;   
+}
+
+#hd-info{
+    height: 0%;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 2;
+    background-color: white;
+    opacity: 0;
+    transition: height 1s, opacity 1s;
+}
+
+header:hover #hd-info{
+    height: 50%;
+    opacity: 1; 
+}
+
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+nav span {
+    width: 50%;
+    padding-right: 20px;
+}
+
+
+/* banner seciton */
+div.banner {
+    margin-top: -100px;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    z-index: 0;
+
+    display: flex;
+    /* main axis alignment */
+    justify-content: center;
+    /* cross axis alignment */
+    align-items: center;
+
+    /* you need to put banner image here! */
+    background-image: url(../images/yasuni_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    color: white;
+    font-size: 300%;
+}
+
+/* Height of first seciton is 50%*/
+#first{
+    width: 100%;
+    height: 50%;
+}
+
+section{
+    width: 100%;
+    height: 70%;
+    font-size: 20px;
+}
+
+.content{
+    padding: 100px;
+}
+
+section img{
+    width: 30%;
+    height: 60%;
+    float: right;
+	padding: 10px;
+}
+
+/* footer section */
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: grey;
+    color: white;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+/* ids */
+#topIcon{
+    margin: 50px;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    /* position option makes header always located at the top position */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

@@ -1,0 +1,110 @@
+/* 
+It is related to the action which occurs when you click upward arrow 
+If you don't use this property, it teleport to the top without smooth animation.
+*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+#hd-menu {
+    /* it makes menu always located above all contents */
+    z-index: 2;
+
+    /* position option makes header always located at the top position */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 80px;
+    padding: 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    /* You MUST use this property if you want to align elements easily. */
+    display: flex;
+    /* main axis alignment */
+    justify-content: space-between;
+    /* cross axis alignment */
+    align-items: center;
+}
+
+
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+nav span {
+    width: 50%;
+    padding-right: 20px;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    position: absolute;
+  
+}
+
+/* banner seciton */
+div.banner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/monkey.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    background-position: center;
+    color: white;
+    font-size: 150%;
+    position: absolute;
+    /* main axis alignment */
+    justify-content: flex-end;
+    /* cross axis alignment */
+    align-items: center;
+}
+
+#first_section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/donation.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    background-position: center;
+    color: white;
+    font-size: 150%;
+    position: absolute;
+    /* main axis alignment */
+    justify-content: flex-end;
+    /* cross axis alignment */
+    align-items: center;
+}
+/* footer section */
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: grey;
+    color: white;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+
